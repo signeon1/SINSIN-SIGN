@@ -1,0 +1,110 @@
+{
+  "entities": {
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "A customer inquiry from the contact form.",
+      "type": "object",
+      "properties": {
+        "companyName": {
+          "type": "string",
+          "description": "Name of the company or business."
+        },
+        "contactName": {
+          "type": "string",
+          "description": "Name of the person inquiring."
+        },
+        "contactPhone": {
+          "type": "string",
+          "description": "Phone number of the contact."
+        },
+        "address": {
+          "type": "string",
+          "description": "Address of the site."
+        },
+        "signType": {
+          "type": "string",
+          "description": "Desired type of sign."
+        },
+        "budgetAndSchedule": {
+          "type": "string",
+          "description": "Budget and schedule details."
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "When the inquiry was submitted."
+        },
+        "userId": {
+          "type": "string",
+          "description": "The UID of the user who submitted the inquiry, if logged in."
+        }
+      },
+      "required": ["companyName", "contactName", "contactPhone", "createdAt"]
+    },
+    "PortfolioItem": {
+      "title": "Portfolio Item",
+      "description": "A past project shown in the gallery.",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Title of the project."
+        },
+        "category": {
+          "type": "string",
+          "description": "Category (e.g., Outdoor, Indoor, LED, Pillar)."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of the main image."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the project."
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "When the item was added."
+        }
+      },
+      "required": ["title", "category", "imageUrl", "createdAt"]
+    },
+    "User": {
+      "title": "User",
+      "description": "A user of the system.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["admin", "user"]
+        },
+        "createdAt": {
+          "type": "timestamp"
+        }
+      },
+      "required": ["email", "role", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/inquiries/{inquiryId}": {
+      "schema": {
+        "$ref": "#/entities/Inquiry"
+      },
+      "description": "Collection of customer inquiries."
+    },
+    "/portfolio/{portfolioId}": {
+      "schema": {
+        "$ref": "#/entities/PortfolioItem"
+      },
+      "description": "Collection of portfolio items."
+    },
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/User"
+      },
+      "description": "Collection of user profiles."
+    }
+  }
+}
