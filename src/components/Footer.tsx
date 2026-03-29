@@ -24,8 +24,8 @@ export default function Footer() {
         <div className="border-t border-zinc-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
           <div className="mb-4 md:mb-0 text-center md:text-left">
             <p className="mb-1"><span className="text-white font-semibold">SINSIN SIGN</span> (신신홍보기획)</p>
-            <p>Tel: 1544-0000 | Fax: 0505-000-0000 | Email: contact@sinsinsign.com</p>
-            <p>경기도 부천시 원미구 중동 1112 상록센트럴타워 505호</p>
+            <p>Tel: 02-764-7990 | Fax: 02-764-5362 | Email: signeon1@gmail.com</p>
+            <p>서울시 종로구 종로31길 46-3</p>
           </div>
           <div className="text-center md:text-right">
             <p>Copyright © SINSIN SIGN. All rights reserved.</p>

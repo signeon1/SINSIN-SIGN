@@ -127,37 +127,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Notice / News Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-orange-500 font-bold tracking-widest text-sm mb-2">NOTICE</h2>
-            <h3 className="text-3xl font-bold text-gray-900">신신홍보기획은 매일매일 성장하고 있습니다.</h3>
-            <p className="text-gray-500 mt-4">다양한 소식을 쉽고 빠르게 만나보세요.</p>
-          </div>
-          
-          <div className="bg-white shadow-sm rounded-xl overflow-hidden border border-gray-100">
-            {[
-              { date: '12', month: '2025.05', title: '신신홍보기획에서 인재를 채용합니다.', desc: '양질의 서비스와 발전하는 기업이 되기 위해 새로운 인재를 모십니다.' },
-              { date: '27', month: '2024.08', title: '새롭게 홈페이지를 오픈하였습니다!', desc: '고객과의 소통을 강화하기 위해 반응형 웹사이트를 새롭게 구축했습니다.' }
-            ].map((item, idx) => (
-              <div key={idx} className="flex items-center p-6 border-b border-gray-100 last:border-0 hover:bg-gray-50 transition-colors cursor-pointer group">
-                <div className="text-center pr-6 border-r border-gray-200 mr-6 min-w-[100px]">
-                  <div className="text-3xl font-bold text-orange-600">{item.date}</div>
-                  <div className="text-sm text-gray-500">{item.month}</div>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">{item.title}</h4>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
-                </div>
-                <div className="text-gray-400 group-hover:text-orange-600 transition-colors">
-                  <ArrowRight size={20} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

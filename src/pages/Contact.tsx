@@ -87,8 +87,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">대표전화</h4>
-                  <p className="text-gray-600 mt-1">1544-0000</p>
-                  <p className="text-sm text-gray-500 mt-1">팩스: 0505-000-0000</p>
+                  <p className="text-gray-600 mt-1">02-764-7990</p>
+                  <p className="text-sm text-gray-500 mt-1">팩스: 02-764-5362</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">이메일</h4>
-                  <p className="text-gray-600 mt-1">contact@sinsinsign.com</p>
+                  <p className="text-gray-600 mt-1">signeon1@gmail.com</p>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">오시는 길</h4>
-                  <p className="text-gray-600 mt-1">경기도 부천시 원미구 중동 1112<br />상록센트럴타워 505호</p>
+                  <p className="text-gray-600 mt-1">서울시 종로구<br />종로31길 46-3</p>
                 </div>
               </div>
 
